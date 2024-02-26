@@ -1,0 +1,11 @@
+.imagecontainer{
+    padding-top:2rem ;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .img{
+    width:19%;
+  }

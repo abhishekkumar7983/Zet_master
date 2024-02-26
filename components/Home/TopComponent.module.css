@@ -1,0 +1,72 @@
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    grid-gap: 10px; /* Gap between grid items */
+    width:70%;
+    margin-top: 8rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color:#E9F4FF;
+    font-family: graphie,sans-serif;
+  }
+
+  .griditem1 {
+    padding-left:10% ;
+    padding-top: 5rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: Graphie,sans-serif;
+  }
+  .griditem2 {
+    padding: 10px;
+    margin-top: -5rem;
+    padding-bottom: 2rem;
+  }
+  .blue{
+    color: blue;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  .line{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  .lastline{
+    font-size: 1.4rem;
+    font-weight: normal;
+    padding-top: 0.7rem;
+    padding-bottom: 0.1rem;
+  }
+  .Google{
+    padding:0;
+    background-color: white;
+    border-radius: 0.4rem;
+    border:none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .gridcontainer2{
+    display: grid;
+    text-align: center;
+    width:70%;
+    margin-top: 8rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color:#E9F4FF;
+    font-family: graphie,sans-serif;
+  }
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .appear-from-bottom {
+    opacity: 0;
+    animation: slide-up 0.5s ease-out forwards;
+  }

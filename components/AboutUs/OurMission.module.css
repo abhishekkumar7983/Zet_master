@@ -1,0 +1,35 @@
+
+.container {
+    background-image: url('./../../public/OurMission.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    text-align: center;
+    font-family: graphie,sans-serif;
+  }
+.heading{
+    padding-top: 9rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+}
+.text{
+    padding-top: 0rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.line{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.endtext{
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 18rem;
+}
+  

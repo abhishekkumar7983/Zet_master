@@ -1,0 +1,10 @@
+.appear-from-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .appear-from-bottom.appeared {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

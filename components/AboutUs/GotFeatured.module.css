@@ -1,0 +1,12 @@
+.head{
+    font-size: 2.5rem;
+    padding-left: 10%;
+    font-weight: 600;
+    font-family: Graphie,sans-serif;
+    padding-top:4rem;
+}
+@media screen and (max-width: 800px) {
+    .head{
+        font-size:2rem;
+    }
+  }

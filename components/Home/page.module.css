@@ -1,0 +1,237 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: auto 10%;
+    font-family: sans-serif;
+  }
+  
+  .main_container {
+    background: linear-gradient(168deg, rgb(233, 244, 255) 0%, rgb(255, 255, 255) 100%);
+    padding-top: 2vw;
+    padding-bottom: 8vw;
+    position: relative;
+  }
+  
+  .cards {
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cards {
+    /* background-color: #fff; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .cards:hover {
+    /* background-color: white; */
+    transform: scale(1.05);
+    background-color: white !important;
+  }
+  
+  .cards:hover .card_image {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+  }
+  
+  .card_image {
+    transition: filter 0.3s ease-in-out;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  
+  .card_img {
+    max-width: 100%;
+    margin: 10px;
+    color: transparent;
+  }
+  
+  .card_heading {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-bottom: -5px;
+    /* text-align: center; */
+  }
+  
+  .card_para {
+    padding-top: -5px;
+    font-size: 1rem;
+  }
+  
+  .card_text {
+    padding: 10px;
+    font-size: 1.3rem;
+    /* align-items: center; */
+    /* line-height: 15px; */
+  }
+  
+  .title_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-family: sans-serif;
+  }
+  
+  .title_head {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  .title_line {
+    font-size: 1.1rem;
+  }
+  
+  .card_bg_upper {
+      color: transparent;
+      position: absolute;
+      top: 2%;
+      left: 0px;
+      z-index: 0;
+      overflow-clip-margin: content-box;
+      overflow: clip;
+      width: 386px;
+      aspect-ratio: auto 386 / 452;
+      height: 452px;
+  }
+  
+  .card_bg_lower {
+      color: transparent;
+      position: absolute;
+      bottom: 0;
+      right: -40px;
+      z-index: 0;
+      overflow-clip-margin: content-box;
+      overflow: clip;
+      width: 386px;
+      aspect-ratio: auto 386 / 452;
+      height: 452px;
+  }
+  
+  /* Tablet and Smaller Desktop */
+  @media  (max-width: 910px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+    .cards {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  @media  (max-width: 1200px) and (min-width: 910px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      margin: auto 5%;
+    }
+    .cards {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 580px) {
+      .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+  
+      .card-text {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+  
+      .card-para {
+        text-align: center;
+        font-size:1.5rem;
+        font-family: sans-serif;
+      }
+  
+      .card-heading {
+        text-align: center;
+        font-size: 1.25rem;
+        font-family: "Montserrat";
+      }
+  
+      .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: auto 2%;
+      }
+  
+      .card_img {
+        color: transparent;
+      }
+  }
+  
+  @media (hover: hover) {
+    /* Only apply hover effect on devices that support hover */
+    .cards:hover {
+      background-color: white;
+      -webkit-transform: translateZ(0);
+    }
+  
+    .cards:hover .card_image {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      -webkit-transform: translateZ(0);
+    }
+  }
+  
+  @media (hover: none) {
+    /* Apply tap effect on devices that don't support hover (e.g., mobile) */
+    .cards:active {
+      background-color: white;
+      -webkit-transform: translateZ(0);
+    }
+  
+    .cards:active .card_image {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      -webkit-transform: translateZ(0);
+    }
+  }
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .appear-from-bottom {
+    opacity: 0;
+    animation: slide-up 0.5s ease-out forwards;
+  }
+  

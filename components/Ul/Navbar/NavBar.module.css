@@ -1,0 +1,72 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color:white;
+    padding: 10px;
+  }
+  
+  .navbarleft {
+    margin-left: 10rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbarright {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-weight: 100;
+    font-family: Graphie,sans-serif;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .downloadbtn {
+    margin-left:4rem;
+    margin-right: 10rem;
+    padding: 8px 16px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  .toggle{
+    background-color: white;
+    border:none;
+  }
+  .dropdown{
+    text-align: center;
+    font-family: Graphie,sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .link{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .home{
+    padding-left: 15rem;
+  }
+  
